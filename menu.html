@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Muchos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("0.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="menu.html" class="w3-bar-item w3-button">MENU</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="location.html" class="w3-bar-item w3-button">LOCATION</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pasta</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+      </a>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Salad');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salad</div>
+      </a>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Beverages');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Beverages</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <img src="a.webp" width="400"><h1><b>Cheese Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">250</span></h1>
+      <p class="w3-text-grey">a soft spun-curd cheese similar to Mozzarella made from cow's milk</p>
+      <hr>
+   
+      <img src="b.jpg" width="400"><h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">350</span></h1>
+      <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      
+      <img src="c.jpg" width="400"><h1><b>Veggie Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">450</span></h1>
+      <p class="w3-text-grey">Fresh roasted red peppers, baby spinach, onions, mushrooms, tomatoes, black olives, and topped with three kinds of cheese feta, provolone, and mozzarella  </p>
+      <hr>
+
+      <img src="d.jpg" width="400"><h1><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">300</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <hr>
+
+      <img src="e.jpg" width="400"><h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">400</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+      <hr>
+
+      <img src="f.webp" width="400"><h1><b>Pizza Burger</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">250</span></h1>
+      <p class="w3-text-grey">pizza sauce, burger patties, pepperoni, cheeses, and bread, every bite is a harmonious blend of seasonings and ingredients working well to satisfy</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <img src="i.jpg" width="400"><h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">300</span></h1>
+      <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+      <hr>
+   
+      <img src="00.jpg" width="400"><h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">250</span></h1>
+      <p class="w3-text-grey">Ravioli filled with cheese</p>
+      <hr>
+      
+     <img src="j.webp" width="400"> <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">150</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+      <hr>
+
+     <img src="k.webp" width="400"> <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">200.</span></h1>
+      <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">100</span></h1>
+      <p class="w3-text-grey">Ask the waiter</p>
+      <hr>
+   
+      <img src="01.jpg" width="400"><h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">200</span></h1>
+      <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+      <hr>
+      
+      <img src="aa.jpg" width="400"><h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">130</span></h1>
+      <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+      
+      <img src="bb.jpg" width="400"><h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">100</span></h1>
+      <p class="w3-text-grey">Tomatoes and mozzarella</p>
+    </div><br>
+<div id="Salad" class="w3-container menu w3-padding-32 w3-white">
+      <img src="jj.jpg" width="400"><h1><b>Summer Asian Slaw</b> <span class="w3-right w3-tag w3-dark-grey w3-round">250</span></h1>
+      <p class="w3-text-grey">ade with red and green cabbage, green onions, peppers, and a tangy sesame dressing.</p>
+      <hr>
+      <img src="41.webp" width="400"><h1><b>Shredded Brussels Sprout Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">350</span></h1>
+      <p class="w3-text-grey">Made with just 7 ingredients, it’s a breeze to put together, but a bright lemon dressing, Parmesan cheese, pine nuts, and dried cranberries make it zippy, fresh, and satisfying.</p>
+      <hr>
+      
+      <img src="40.jpeg" width="400"><h1><b>Cherry Tomato Couscous Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">250</span></h1>
+      <p class="w3-text-grey">A mix of jammy roasted cherry tomatoes and juicy fresh ones makes this guy one of my favorite summer salads. With spiced roasted chickpeas, tangy feta, and big pearls of couscous </p>
+      <hr>
+
+      <img src="k1.jpg" width="400"><h1><b>Healthy Taco Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">200</span></h1>
+      <p class="w3-text-grey">Savory shiitake walnut taco “meat” is the star of this salad, and zippy cilantro lime dressing gives it a fresh finishing touch. Enjoy this salad as a meal on its own, or serve it as a starter with fajitas or tacos.</p>
+      <hr>
+
+      <img src="mk.jpg" width="400"><h1><b> Grilled Romaine Vegan Caesar Wedges</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">200</span></h1>
+      <p class="w3-text-grey">Crisp romaine gets lightly charred, then drizzled with an irresistibly tangy cashew vegan caesar dressing.</p>
+      <hr>
+
+      <img src="lk.jpg" width="400"><h1><b>Spicy Watermelon Tomato Salad</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">150</span></h1>
+      <p class="w3-text-grey">Fresh chiles add some heat to the sweet, juicy mix of tomatoes & watermelon</p>
+    </div>
+<div id="Beverages" class="w3-container menu w3-padding-32 w3-white">
+      <img src="as.webp" width="400"><h1><b>Cardamom Thandai</b> <span class="w3-right w3-tag w3-dark-grey w3-round">150</span></h1>
+      <p class="w3-text-grey">The festival of colours is incomplete without indulging in scrumptious foods and refreshing drinks like Thandai.A chilled drink with a mix of milk, dry fruits, seeds and nuts </p>
+      <hr>
+   
+      <img src="sa.webp" width="400"><h1><b>Plum & date sharbat milk</b> <span class="w3-right w3-tag w3-dark-grey w3-round">150</span></h1>
+      <p class="w3-text-grey"> A Ramzan special drink, which is prepare with plum and dates.</p>
+      <hr>
+      
+      <img src="ba.jpg" width="400"><h1><b>Immunity Booster Juice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">150</span></h1>
+      <p class="w3-text-grey">A refreshing glass of juice is perfect to start your day with. </p>
+      <hr>
+
+      <img src="da.webp" width="400"><h1><b>Dark Night</b> <span class="w3-right w3-tag w3-dark-grey w3-round">200</span></h1>
+      <p class="w3-text-grey"> One of the best in-house cocktail, whisky infused with honey, cinnamon, star anise and cloves.</p>
+      <hr>
+
+      <img src="ka.webp" width="400"><h1><b>Berry Kanji</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">200</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chickenBerry Kanji is made with frozen kanji mixed with spices and serve with mint and lemon wedge.</p>
+      <hr>
+
+      <img src="la.webp" width="400"><h1><b>Mocha Cashew Butter </b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">250</span></h1>
+      <p class="w3-text-grey">Flavored with coffee, chocolate chips and cashews, this easy-to-make cooler is a yummy way to bring out the deliciousness of a mocha.</p>
+    </div>
+  </div>
+</div>
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
